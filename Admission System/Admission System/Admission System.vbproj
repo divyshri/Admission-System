@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41B279D0-041A-4B31-BD95-CC89CCE6B21C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Admission_System.My.MyApplication</StartupObject>
+    <RootNamespace>Admission_System</RootNamespace>
+    <AssemblyName>Admission System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Divyashu\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Admission System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Admission System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Artua-Mac-Intranet.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdmittedStudentListForm.Designer.vb">
+      <DependentUpon>AdmittedStudentListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdmittedStudentListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonRankList1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonRankList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonRankListForm.Designer.vb">
+      <DependentUpon>CommonRankListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CommonRankListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmittedStudent.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdmittedStudent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GENCandidateRankListForm.Designer.vb">
+      <DependentUpon>GENCandidateRankListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GENCandidateRankListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import_Enroll_No.Designer.vb">
+      <DependentUpon>Import_Enroll_No.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Import_Enroll_No.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OBCCandidatesRankListForm.Designer.vb">
+      <DependentUpon>OBCCandidatesRankListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OBCCandidatesRankListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Records_Form.Designer.vb">
+      <DependentUpon>Records_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Records_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCCandidateRankListForm.Designer.vb">
+      <DependentUpon>SCCandidateRankListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SCCandidateRankListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STCandidateRankList1.vb">
+      <DependentUpon>STCandidateRankList.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SCCandidateRankList1.vb">
+      <DependentUpon>SCCandidateRankList.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="OBCCandidateRankList1.vb">
+      <DependentUpon>OBCCandidateRankList.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="GENCandidateRankList1.vb">
+      <DependentUpon>GENCandidateRankList.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DeleteStudent.Designer.vb">
+      <DependentUpon>DeleteStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fee_data_import.Designer.vb">
+      <DependentUpon>Fee_data_import.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fee_data_import.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RankList.Designer.vb">
+      <DependentUpon>RankList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RankList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import_Entrance_marks.Designer.vb">
+      <DependentUpon>Import_Entrance_marks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Import_Entrance_marks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Import Student Record.Designer.vb">
+      <DependentUpon>Import Student Record.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Import Student Record.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="record_report1.vb">
+      <DependentUpon>record_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.vb">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Rank Calculation.Designer.vb">
+      <DependentUpon>Rank Calculation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rank Calculation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search Student.Designer.vb">
+      <DependentUpon>Search Student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STCandidateRankListForm.Designer.vb">
+      <DependentUpon>STCandidateRankListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STCandidateRankListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Student.Designer.vb">
+      <DependentUpon>Update Student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Update Student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRegisterdStudent.Designer.vb">
+      <DependentUpon>UpdateRegisterdStudent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRegisterdStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdmittedStudentListForm.resx">
+      <DependentUpon>AdmittedStudentListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonRankList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CommonRankList1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonRankListForm.resx">
+      <DependentUpon>CommonRankListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmittedStudent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdmittedStudent.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENCandidateRankListForm.resx">
+      <DependentUpon>GENCandidateRankListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import_Enroll_No.resx">
+      <DependentUpon>Import_Enroll_No.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OBCCandidatesRankListForm.resx">
+      <DependentUpon>OBCCandidatesRankListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Records_Form.resx">
+      <DependentUpon>Records_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCCandidateRankListForm.resx">
+      <DependentUpon>SCCandidateRankListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STCandidateRankList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>STCandidateRankList1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCCandidateRankList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SCCandidateRankList1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OBCCandidateRankList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OBCCandidateRankList1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GENCandidateRankList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GENCandidateRankList1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStudent.resx">
+      <DependentUpon>DeleteStudent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fee_data_import.resx">
+      <DependentUpon>Fee_data_import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import_Entrance_marks.resx">
+      <DependentUpon>Import_Entrance_marks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Import Student Record.resx">
+      <DependentUpon>Import Student Record.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RankList.resx">
+      <DependentUpon>RankList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="record_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>record_report1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rank Calculation.resx">
+      <DependentUpon>Rank Calculation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Student.resx">
+      <DependentUpon>Search Student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STCandidateRankListForm.resx">
+      <DependentUpon>STCandidateRankListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Student.resx">
+      <DependentUpon>Update Student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRegisterdStudent.resx">
+      <DependentUpon>UpdateRegisterdStudent.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Artua-Mac-Intranet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
